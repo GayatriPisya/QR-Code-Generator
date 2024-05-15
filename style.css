@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #c286f7, #8bb1f9, #f77167);
+}
+.wrapper {
+  border: 0.1em solid #2b58ac;
+  box-shadow: 0 0 0.2em rgba(38, 63, 109, 0.8);
+  background-color: #e1a5fd;
+  padding: 5em 4em;
+  position: absolute;
+  width: 31.25em;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 3.2em;
+}
+#userInput {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  outline: none;
+  border-radius: 3.2em;
+}
+.options {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+select {
+  appearance: none;
+  width: 8em;
+  padding: 0.45em 0.9em;
+  font-size: 1.25em;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  background-color: #c637ff;
+  border: none;
+  color: #f5efef;
+  background-image: url("arrow.png");
+  background-repeat: no-repeat;
+  background-size: 1.1em;
+  background-position: 6em;
+  outline: none;
+  border-radius: 0.3em;
+}
+select::-ms-expand {
+  display: none;
+}
+select option {
+  background-color: #ffffff;
+  color: #040404;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  font-size: 1.12em;
+}
+.selected {
+  display: none;
+}
+.color-inp {
+  appearance: none;
+  background-color: transparent;
+  width: 3.1em;
+  height: 3.4em;
+  outline: none;
+  border: none;
+}
+.color-inp::-webkit-color-swatch {
+  border-radius: 0.3em;
+  border: 0.18em solid #191f3f;
+}
+.color-inp::-moz-color-swatch {
+  border-radius: 0.3em;
+  border: 0.18em solid #191f3f;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.box button,
+.box a {
+  font-size: 1em;
+  padding: 0.8em 2em;
+  border-radius: 0.5em;
+  margin-top: 2em;
+}
+.box button:disabled {
+  background-color: white;
+  color: #000000;
+  border: 0.18em solid #ab48f7;
+}
+.box button {
+  background-color: purple;
+  color: #ffffff;
+  border: 0.18em solid #dd00ff;
+}
+.box a {
+  background-color: purple;
+  color: #ffffff;
+  text-decoration: none;
+  border: 0.18em solid #ee00ff;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.8em;
+}
+.hide {
+  display: none;
+}
